@@ -51,13 +51,13 @@ It seems the logging fails because the default implementation of MongoConfig.get
 No error, the application runs fine and output the expected joined results:
 
 ```
-+--------------------+---+--------+--------------------+---+----+-------+-------+
-|                 _id| id|    name|                 _id| id|kind|   name|ownerId|
-+--------------------+---+--------+--------------------+---+----+-------+-------+
-|6290aeef2dec7e204...|  1|  Albert|6290aef02dec7e204...|  1| dog|   Doug|      1|
-|6290aeef2dec7e204...|  2| Bernard|6290aef02dec7e204...|  2| dog|  Frank|      2|
-|6290aeef2dec7e204...|  2| Bernard|6290aef02dec7e204...|  3| cat|Mr Meow|      2|
-|6290aeef2dec7e204...|  3|Caroline|6290aef02dec7e204...|  4|bird|  Pauly|      3|
-|6290aeef2dec7e204...|  4|   David|6290aef02dec7e204...|  5|rock| Dwayne|      4|
-+--------------------+---+--------+--------------------+---+----+-------+-------+
++--------+----+-------+
+|    name|kind|petName|
++--------+----+-------+
+|  Albert| dog|   Doug|
+| Bernard| dog|  Frank|
+| Bernard| cat|Mr Meow|
+|Caroline|bird|  Pauly|
+|   David|rock| Dwayne|
++--------+----+-------+
 ```
