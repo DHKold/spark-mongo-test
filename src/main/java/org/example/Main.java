@@ -25,7 +25,8 @@ public class Main {
         // Execute a simple join
         Dataset<Row> users = read(sparkServer.getSession(), "users");
         Dataset<Row> pets = read(sparkServer.getSession(), "pets");
-        Dataset<Row> results = users.join(pets, users.col("id").equalTo(pets.col("ownerId")));
+        Dataset<Row> results = users.join(pets, users.col("id").equalTo(pets.col("ownerId")))
+                .select(users.col("name"), pets.col("kind"), pets.col("name").as("petName"));
         results.show();
         // End
         sparkServer.close();
