@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "kind": "dog",
+    "ownerId": 1,
+    "name": "Doug"
+  },
+  {
+    "id": 2,
+    "kind": "dog",
+    "ownerId": 2,
+    "name": "Frank"
+  },
+  {
+    "id": 3,
+    "kind": "cat",
+    "ownerId": 2,
+    "name": "Mr Meow"
+  },
+  {
+    "id": 4,
+    "kind": "bird",
+    "ownerId": 3,
+    "name": "Pauly"
+  },
+  {
+    "id": 5,
+    "kind": "rock",
+    "ownerId": 4,
+    "name": "Dwayne"
+  }
+]
